@@ -60,6 +60,10 @@ cd ..
 python run.py
 ```
 
+## Download Model
+
+- **Link:** https://drive.google.com/drive/folders/1yqoehY_KstRulPQcUxKmfF2xlDd2HsUx?usp=sharing
+
 ## Features
 
 - **Instance Segmentation:** Utilizes a pre-trained Detectron2 model to perform instance segmentation on images.

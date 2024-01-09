@@ -24,7 +24,7 @@ def perform_instance_segmentation(image, output_format='png'):
     
     metadata = MetadataCatalog.get("traffic_sign_train")
     metadata.thing_classes = ['prohibitory', 'danger', 'mandatory', 'other']
-    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get("traffic_sign_train"), scale=1.5)
+    v = Visualizer(img[:, :, ::-1], MetadataCatalog.get("traffic_sign_train"), scale=2)
 
     result_image = v.draw_instance_predictions(outputs["instances"].to("cpu")).get_image()
 
