@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-st.set_page_config(page_title="Image Segmentation App")
+st.set_page_config(page_title="Traffic Sign Segmentation App")
 
 FLASK_SERVER_URL = "http://127.0.0.1:5000/segment"
 
@@ -13,7 +13,7 @@ def get_segmented_image(response):
     return Image.open(img_bytes)
 
 with st.container():
-    st.header("Image Segmentation App")
+    st.header("Traffic Sign Segmentation App")
     st.write("---")
     uploaded_file = st.file_uploader("Choose an image...", type=['png', 'jpg', 'jpeg'])
     
